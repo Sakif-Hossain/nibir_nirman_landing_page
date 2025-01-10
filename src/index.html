@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/src/css/animation.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="/src/js/swiper_init.js" defer></script>
     <link rel="stylesheet" href="/src/css/swiper.css" />
@@ -176,9 +177,7 @@
       <!-- Main Content Container -->
       <div class="container mx-auto px-4 lg:px-6">
         <div class="pt-20 pb-10">
-          <div
-            class="transform transition-transform duration-1000 translate-y-0"
-          >
+          <div class="fade-in">
             <h1 class="sr-only">Nibir Nirman</h1>
             <h2 class="text-4xl md:text-6xl lg:text-7xl pl-24">
               <span class="font-bold">Safety. Reliability. </span>
@@ -193,7 +192,10 @@
         <!-- Two Column Layout -->
         <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
           <!-- Image Column -->
-          <div class="relative h-[400px] md:h-[600px]">
+          <div
+            class="relative h-[400px] md:h-[600px] fade-in"
+            style="transition-delay: 0.2s"
+          >
             <img
               src="https://images.unsplash.com/photo-1626385785701-a0d3b879de2c?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="worker pointing to construction underway"
@@ -202,11 +204,9 @@
           </div>
 
           <!-- Content Column -->
-          <div
-            class="transform transition-transform duration-1000 translate-y-0"
-          >
+          <div>
             <!-- 100 Years Section -->
-            <div class="mb-8">
+            <div class="mb-8 fade-in" style="transition-delay: 0.4s">
               <h3 class="text-2xl font-bold mb-6">
                 27 Years of Experience Building Bangladesh
               </h3>
@@ -226,7 +226,7 @@
             </div>
 
             <!-- Tradition of Trust Section -->
-            <div>
+            <div class="fade-in" style="transition-delay: 0.6s">
               <h3 class="text-2xl font-franklin font-bold mb-6">
                 Tradition of Trust
               </h3>
@@ -255,7 +255,7 @@
         <!-- Two Column Layout -->
         <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <!-- Content Column -->
-          <div>
+          <div class="fade-in">
             <h3 class="text-4xl font-bold mb-6">Invested in Success</h3>
             <h5 class="text-2xl font-bold mb-6">
               Client Satisfaction is Our Priority
@@ -269,7 +269,9 @@
           </div>
 
           <!-- Image Column -->
-          <div class="relative h-[400px] md:h-[600px] flex items-center">
+          <div
+            class="relative h-[400px] md:h-[600px] flex items-center fade-in"
+          >
             <img
               src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=2897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="worker pointing to construction underway"
@@ -666,14 +668,14 @@
                 class="w-full h-full min-h-[400px] rounded-xl overflow-hidden shadow-lg"
               >
                 <iframe
-                  width="100%"
-                  height="100%"
-                  style="min-height: 400px; border: 0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.0556353700294!2d90.40094343867256!3d23.781033094662334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74b0171f143%3A0xa8a37ccf21f70228!2sNIBIR%20NIRMAN!5e0!3m2!1sen!2sca!4v1736464819718!5m2!1sen!2sca"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
                   loading="lazy"
-                  allowfullscreen
-                  src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=New+York,NY+10001"
-                >
-                </iframe>
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
